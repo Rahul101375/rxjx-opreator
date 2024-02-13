@@ -1,0 +1,28 @@
+<h3 class="px-3">
+    From event
+</h3>
+
+<div class="row m-4">
+    <ng-container *ngFor="let item of observableList; let i=index">
+        <div class="card border-success mx-2 col-sm-3" >
+            <div class="card-header bg-transparent border-success">{{item?.label}}</div>
+            <div class="card-body text-success">
+              <h5 class="card-title">What & Why</h5>
+              <p class="card-text">{{item?.method}}</p>
+            </div>
+            <div class="card-footer bg-transparent border-success">
+                <button class="btn btn-primary" [id]="item?.id">Add video</button>
+            </div>
+          </div>
+    </ng-container>
+    <div class="card text-bg-light mx-3 col-sm-3">
+        <div class="card-header">List</div>
+        <div class="card-body">
+           <ul id="fromEventId"></ul>
+        </div>
+    </div>
+</div>
+
+ 
+ 
+
